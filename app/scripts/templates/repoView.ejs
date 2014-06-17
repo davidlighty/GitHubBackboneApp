@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="repo-card">
+        <div class="repo-card-front">
+            <ul>
+                <li><h1><%= name %></h1></li>
+                <li><p class="repo-desc"><%= description %></p></li>
+            </ul>
+        </div>
+        <div class="repo-card-back">
+            <ul>
+                <li><a href="<%= html_url%>" class="repo-link" target="_github"><i class="fa fa-external-link"></i></a></li>
+                <li><small>Created: <%= created_at %></small></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="repo-stats">
+                <li><small>ID</small> <span><%= id %></span></li>
+                <li class="language"><%= language %></li>
+                <li class="stargazers">
+                    <a class="tooltipped tooltipped-s" href="<%= stargazers_url %>" aria-label="Stargazers">
+                    <i class="fa fa-star"></i> <%= stargazers_count %>
+                    </a>
+                </li>
+                <li class="forks">
+                    <a class="tooltipped tooltipped-s" href="<%= forks_url %>" aria-label="Forks">
+                    <i class="fa fa-code-fork"></i> <%= forks %>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
